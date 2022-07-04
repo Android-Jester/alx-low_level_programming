@@ -7,10 +7,14 @@
  */
 int main(void)
 {
-  int min = 48;
-  while(min < 57)
-  {
-    putchar(min);
-  }
-  return (0);
+	int i;
+
+	for (i = 48; i <= 57; i++)
+	{
+		putchar(i);
+	}
+
+	putchar('\n');
+
+	return (0);
 }

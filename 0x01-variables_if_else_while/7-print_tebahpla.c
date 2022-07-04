@@ -7,11 +7,14 @@
  */
 int main(void)
 {
-  int max = 122;
-  while(max >= 97)
-  {
-    putchar(max);
-    max--;
-  }
-  return (0);
+	int i;
+
+	for (i = 122; i >= 97; i--)
+	{
+		putchar(i);
+	}
+
+	putchar('\n');
+
+	return (0);
 }

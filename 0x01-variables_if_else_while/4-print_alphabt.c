@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,16 +7,23 @@
  */
 int main(void)
 {
-  int max = 26;
-  int min = 0;
-  int base = 97;
-  while (min != max)
-  {
-    if(base != 101 || base !=113)
-    {
-      putchar(base + min);
-    }
-    min++;
-  }
-  return (0);
+
+	int i = 97;
+
+	while (i >= 97 && i <= 122)
+	{
+		if (i == 101 || i == 113)
+		{
+			i++;
+			continue;
+		} else
+		{
+			putchar(i);
+		}
+		i++;
+	}
+
+	putchar('\n');
+
+	return (0);
 }

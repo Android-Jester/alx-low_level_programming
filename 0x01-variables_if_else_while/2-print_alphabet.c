@@ -1,15 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry Point
  *
- * Return: Always 0 (Success)
+ * Description: prints of alphabets in lowercase with putschar function
+ *
+ * Return: Always 0(Success)
  */
+
+
 int main(void)
 {
-  char* alphabets = "abcdefghijklmnopqrstuvwxyz";
-  for(int a = 0;i<strlen(alphabets);a++)
-  {
-    putchar(alphabets[a]);
-  }
+	char alphabeth[] = "abcdefghijklmnopqrstuvwxyz";
+
+	int i, size = sizeof(alphabeth) / sizeof(alphabeth[0]);
+
+	for (i = 0; i < size - 1; i++)
+		putchar(alphabeth[i]);
+	putchar('\n');
+	return (0);
 }

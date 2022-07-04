@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-  for(int i = 0;i < 10;i++)
-  {
-    printf("%d", i);
-  }
-  return (0);
+int numbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, i;
+int size = sizeof(numbers) / sizeof(*numbers);
+
+	for (i = 0; i < size; i++)
+	{
+		printf("%d", numbers[i]);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
