@@ -1,17 +1,20 @@
 #include "main.h"
-/* More headers go here */
+/* More headers go here*/
 
 /**
- * _strlen - counts the number of characters in the string except the terminating character
- * @s: pointer
- * Return: int
+ * _strlen - returns length of string
+ * @s: string
+ * Return: length of string
  */
+
 int _strlen(char *s)
 {
-    int count = 0;
-    while(*s != '\0') {
-        count++;
-        *(s + 4)
-    }
-    return count;
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+
+	return (len);
 }

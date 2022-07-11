@@ -1,17 +1,21 @@
 #include "main.h"
-/* More headers go here */
+/* More headers go here*/
 
 /**
- * _puts - prints each character except the terminating character
- * @str: pointer
- * Return: int
+ * _puts - prints string
+ * @str: string
+ * Return: void
  */
+
 void _puts(char *str)
 {
-    for(int i = 0; str[i] != '\0'; i++)
-    {
-        _putchar(str[i]);
-        i++;
-    }
-    _putchar('\n');
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+
+	_putchar('\n');
 }
